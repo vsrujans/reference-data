@@ -1,4 +1,6 @@
 {
+  "_from": "reference-data",
+  "_id": "reference-data@1.0.0",
   "name": "reference-data",
   "version": "1.0.0",
   "description": "reference data API collection",
@@ -10,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+http://srvemulapally@100.71.11.29:7990/scm/ovra/ovra-ui.git"
+    "url": "git+https://github.com/vsrujans/reference-data.git"
   },
   "keywords": [
     "county",
