@@ -1,0 +1,67 @@
+{
+  "_from": "reference-data",
+  "_id": "reference-data@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-sH5/nV7J5QreB75iGSFFPjuSeHr0B1oDtSximzlZj/LXoVw47SsOv2WvzPhwYcHMwgXiLI+gvdXY9Cp0MGasjA==",
+  "_location": "/reference-data",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "reference-data",
+    "name": "reference-data",
+    "escapedName": "reference-data",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/reference-data/-/reference-data-1.0.0.tgz",
+  "_shasum": "d87fd3d2f079c7d0165ec4ef7d38a2556d202d46",
+  "_spec": "reference-data",
+  "_where": "C:\\Users\\srvemulapally\\Documents\\OVRAUI",
+  "author": {
+    "name": "srujan vemulapally",
+    "email": "srvemulapally@deloitte.com"
+  },
+  "bugs": {
+    "url": "http://100.71.11.29:7990/projects/reference-data/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Maps ISO 3166-1-alpha-2 codes to English country names and match react-select options props",
+  "devDependencies": {
+    "csv-parser": "^1.11.0",
+    "lodash.isempty": "^4.4.0",
+    "tap": "^7.1.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "files": [
+    "data.json",
+    "data-native.json"
+  ],
+  "homepage": "http://100.71.11.29:7990/projects/reference-data",
+  "keywords": [
+    "country",
+    "countries",
+    "country-list",
+    "react-select"
+  ],
+  "license": "MIT",
+  "main": "country-list.js",
+  "name": "reference-data",
+  "repository": {
+    "type": "git",
+    "url": "git+http://100.71.11.29:7990/projects/reference-data.git"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "version": "2.2.1"
+}

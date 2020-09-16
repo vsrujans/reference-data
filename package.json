@@ -1,0 +1,24 @@
+{
+  "name": "reference-data",
+  "version": "1.0.0",
+  "description": "reference data API collection",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://srvemulapally@100.71.11.29:7990/scm/ovra/ovra-ui.git"
+  },
+  "keywords": [
+    "county",
+    "country",
+    "state",
+    "relatoinship",
+    "list"
+  ],
+  "author": "srvemulapally",
+  "license": "ISC"
+}
