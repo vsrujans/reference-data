@@ -1,0 +1,34 @@
+[
+  {
+    "value": "Mother",
+    "label": "Mother"
+  },
+  {
+    "value":"Father",
+    "label":"Father"
+  },
+  {
+    "value":"Funeral Home of Record",
+    "label": "Funeral Home of Record"
+  },
+  {
+    "value":"Child",
+    "label": "Child"
+  },
+  {
+    "value":"Sibling",
+    "label": "Sibling"
+  },
+  {
+    "value":"Grandparent",
+    "label": "Grandparent"
+  },
+  {
+    "value":"Surviving Spouse",
+    "label": "Surviving Spouse"
+  },
+  {
+    "value":"Other",
+    "label": "Other"
+  }
+]

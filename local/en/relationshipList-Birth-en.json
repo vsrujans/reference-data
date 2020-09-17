@@ -1,0 +1,34 @@
+[
+  {
+    "value": "Self",
+    "label": "Self"
+  },
+  {
+    "value": "Mother",
+    "label": "Mother"
+  },
+  {
+    "value":"Father",
+    "label":"Father"
+  },
+  {
+    "value":"Child",
+    "label": "Child"
+  },
+  {
+    "value":"Sibling",
+    "label": "Sibling"
+  },
+  {
+    "value":"Grandparent",
+    "label": "Grandparent"
+  },
+  {
+    "value":"Spouse",
+    "label": "Spouse"
+  },
+  {
+    "value":"Other",
+    "label": "Other"
+  }
+]

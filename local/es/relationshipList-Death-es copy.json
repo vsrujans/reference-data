@@ -1,0 +1,34 @@
+[
+  {
+    "value": "Mother",
+    "label": "Madre"
+  },
+  {
+    "value":"Father",
+    "label":"Padre"
+  },
+  {
+    "value":"Funeral Home of Record",
+    "label": "Funeraria que figura en el registro"
+  },
+  {
+    "value":"Child",
+    "label": "Hijo/a"
+  },
+  {
+    "value":"Sibling",
+    "label": "Hermanos"
+  },
+  {
+    "value":"Grandparent",
+    "label": "Abuelo/a"
+  },
+  {
+    "value":"Surviving Spouse",
+    "label": "Cónyuge superviviente"
+  },
+  {
+    "value":"Other",
+    "label": "Otra"
+  }
+]

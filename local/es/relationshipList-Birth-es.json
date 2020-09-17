@@ -1,0 +1,34 @@
+[
+  {
+    "label": "Yo",
+    "value": "Self"
+  },
+  {
+    "label": "Madre",
+    "value": "Mother"
+  },
+  {
+    "label":"Padre/madre",
+    "value":"Father"
+  },
+  {
+    "label":"Hijo/a",
+    "value": "Child"
+  },
+  {
+    "label":"Hermano/a",
+    "value": "Sibling"
+  },
+  {
+    "label":"Abuelo/a",
+    "value": "Grandparent"
+  },
+  {
+    "label":"Cónyuge",
+    "value": "Spouse"
+  },
+  {
+    "label":"Otro",
+    "value": "Other"
+  }
+]
