@@ -1,6 +1,6 @@
 import React from "react";
 var useState = React.useState;
-function GetstateData(includeAdditionalStates) {
+function GetStateData(includeAdditionalStates) {
   var countryData = [];
  var labelMap = {};
   var valueMap = {};
@@ -80,13 +80,13 @@ function GetRelationshipData(lang,type) {
   return RelationshipData
 }
 
-export  {
+export default  {
   GetCountriesData,
   GetCountyData,
   GetRelationshipData,
-  GetstateData
+  GetStateData
 }
 
-export default {
-  GetstateData
-}
+//export default {
+ // GetstateData
+//}
