@@ -83,7 +83,8 @@ function GetRelationshipData(lang,type) {
 export  {
   GetCountriesData,
   GetCountyData,
-  GetRelationshipData
+  GetRelationshipData,
+  GetstateData
 }
 
 export default {
