@@ -5,9 +5,7 @@ function GetStateData(includeAdditionalStates) {
  var labelMap = {};
   var valueMap = {};
   if (includeAdditionalStates === "true") {
-    console.log("inside includeAdditionalStates")
     stateData  =  require('./local/en/stateList-en-additionalState.json')
-    console.log("state Data: "+stateData)
     stateData.forEach(states => {
       labelMap[states.label.toLowerCase()] = states.value
       valueMap[states.value.toLowerCase()] = states.label
