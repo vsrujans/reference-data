@@ -1,10 +1,7 @@
 # reference-data
 
-This package take [country-list](http://100.71.11.29:7990/projects/country-list) as reference, and make it more friendly to react-select
 
-Maps ISO 3166-1-alpha-2 codes to English country names and match react-select options props.
-
-Uses data from http://data.okfn.org/data/country-list
+This package has {GetCountyData,GetStateData,GetCountryData,GetRelationshipData} operations and takes parameters to retrun the List based on Language
 
 
 ## Install
@@ -14,7 +11,7 @@ npm install reference-data --save
 ```
 or
 ``` cli
-yarn add reference-data
+npm install {bitbucket location} --save
 ```
 
 ## Example
@@ -22,31 +19,20 @@ yarn add reference-data
 ```js
 import React, { Component } from 'react';
 import Select from 'react-select'
-import countryList from 'reference-data'
+import {GetCountyData,GetStateData,GetCountryData,GetRelationshipData} from "reference-data";
 
-class CountrySelector extends Component {
-  constructor(props) {d
-    super(props)
+function BirthVerificationPage() {
+  
+  const [stateList, setStateList] = useState([]);
 
-    this.options = countryList().getData()
+var stateData = GetStateData("false");
 
-    this.state = {
-      options: this.options,
-      value: null,
-    }
-  }
-
-  changeHandler = value => {
-    this.setState({ value })
-  }
-
+setStateList(stateData);
   render() {
     return (
-      <Select
-        options={this.state.options}
-        value={this.state.value}
-        onChange={this.changeHandler}
-      />
+              <GetStartedBirthVerification
+                stateList={stateList}
+              />
     )
   }
 }
@@ -55,75 +41,53 @@ class CountrySelector extends Component {
 
 ## Methods
 
-All input is case-insensitive.
+All input or parameters are case-sensitive.
 
-### getValue(label)
+###  GetCountyData();
 
-Expects the English country name.
-Returns the code for that country.
-If not found, it returns `undefined`.
-
-### getLabel(value)
-
-Expects a two-digit country code.
-Returns the name for that country.
-If not found, it returns `undefined`.
-
-### getValues()
-
-Returns an array of all country codes.
-
-### getLabels()
-
-Returns an array of all country names.
-
-### getValueList()
-
-Returns a key-value object of all countries using the code as key.
-
-### getLabelList()
-
-Returns a key-value object of all countries using the name as key.
-
-### getData()
-
-Returns an array of all country information, in the same format as it gets imported.
-
-### setLabel(value, label)
-
-Due to different perspectives among different regions, this method can help developers customize the label of specific country. What's more, it can be chained with another methods above.
-
-#### Usage
+Retruns Texas county List
+Example: 
 ```js
-// Make 'Viet Nam' -> 'Vietnam'
-countries.setLabel('VN', 'Vietnam').getLabel('VN') // 'Vietnam'
+var countyDataList = GetCountyData();
 ```
 
-### setEmpty(label)
+### GetStateData(flag); 
 
-You may want an empty value option in the list, so here's the helper function for you. Again, it can be chained with another methods above.
+Returns US State List
+This method takes parameter true/false to include additional states
 
-#### Usage
+Example:
+
+Additional States List
 ```js
-countries.setEmpty('Select a Country').getLabel('') // 'Select a Country'
+var additonalStateData = GetStateData("true");
+```
+States List
+```js
+var stateData = GetStateData("false");
 ```
 
-We can even chain `setLabel` and `setEmpty` together to have list with an empty option and the modified label.
+### countryData(); 
+
+Returns Texas country List
+
+Example:
+
+Additional States List
 ```js
-countries.setLabel('VN', 'Vietnam').setEmpty('Select a Country').getLabel('VN') // 'Vietnam'
+var countryData = countryData();
 ```
 
-### native()
+### GetRelationshipData(lang,type)
 
-You may want to display native name of countries, this is the method for you.
-The data source of native names can be found [here](https://annexare.github.io/Countries/)
+Returns Relationship List
+This method takes parameter lang and type 
 
-#### Usage
+Example:
+
 ```js
-countries.native().getLabel('TW') // 臺灣
+var enBirthReleationship= GetRelationshipData("en","Birth");
+var esBirthReleationship= GetRelationshipData("es","Birth");
+var enDeathReleationship= GetRelationshipData("en","Death");
+var esDeathReleationship= GetRelationshipData("es","Death");
 ```
-
-
-## License
-
-MIT
