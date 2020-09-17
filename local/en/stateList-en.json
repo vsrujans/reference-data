@@ -16,18 +16,6 @@
     "label": "Arkansas"
   },
   {
-    "value": "AA",
-    "label": "Armed Forces Americas"
-  },
-  {
-    "value": "AE",
-    "label": "Armed Forces (Other)"
-  },
-  {
-    "value": "AP",
-    "label": "Armed Forces Pacific"
-  },
-  {
     "value": "CA",
     "label": "California"
   },
@@ -154,10 +142,6 @@
   {
     "value": "ND",
     "label": "North Dakota"
-  },
-  {
-    "value": "MP",
-    "label": "Northern Mariana Islands"
   },
   {
     "value": "OH",

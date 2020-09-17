@@ -1,14 +1,12 @@
 import React from "react";
-var useState = React.useState;
 function GetStateData(includeAdditionalStates) {
-  var countryData = [];
+  var additionalStateData = [];
+  var stateData=[];
  var labelMap = {};
   var valueMap = {};
   if (includeAdditionalStates === "true") {
     console.log("inside includeAdditionalStates")
-    additionalStateData = require('./local/en/stateList-en-additionalState.json')
-    stateData  =  require('./local/en/stateList-en.json')
-    stateData = stateData.concat(additionalStateData)
+    stateData  =  require('./local/en/stateList-en-additionalState.json')
     console.log("state Data: "+stateData)
     stateData.forEach(states => {
       labelMap[states.label.toLowerCase()] = states.value
@@ -24,7 +22,7 @@ function GetStateData(includeAdditionalStates) {
   }
   return stateData
 }
-function GetCountriesData() {
+function GetCountryData() {
   var countryData = [];
   var labelMap = {};
   var valueMap = {};
@@ -80,13 +78,9 @@ function GetRelationshipData(lang,type) {
   return RelationshipData
 }
 
-export default  {
-  GetCountriesData,
+export  {
+  GetCountryData,
   GetCountyData,
   GetRelationshipData,
   GetStateData
 }
-
-//export default {
- // GetstateData
-//}
